@@ -12,6 +12,11 @@
 		4C143D9020DBAB770081348C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C143D8E20DBAB770081348C /* Main.storyboard */; };
 		4C143D9220DBAB770081348C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C143D9120DBAB770081348C /* Assets.xcassets */; };
 		4C143D9520DBAB770081348C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C143D9320DBAB770081348C /* LaunchScreen.storyboard */; };
+		4C143D9F20DBAF690081348C /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C143D9E20DBAF690081348C /* TableViewCell.swift */; };
+		4C143DA120DBAFFC0081348C /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C143DA020DBAFFC0081348C /* TableViewController.swift */; };
+		4C143DA420DBB06A0081348C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C143DA320DBB06A0081348C /* MapKit.framework */; };
+		4C143DA620DBB3E10081348C /* detailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C143DA520DBB3E10081348C /* detailViewController.swift */; };
+		4C143DA820DBB53C0081348C /* totalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C143DA720DBB53C0081348C /* totalViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		4C143D9120DBAB770081348C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C143D9420DBAB770081348C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C143D9620DBAB770081348C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C143D9E20DBAF690081348C /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		4C143DA020DBAFFC0081348C /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		4C143DA320DBB06A0081348C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		4C143DA520DBB3E10081348C /* detailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailViewController.swift; sourceTree = "<group>"; };
+		4C143DA720DBB53C0081348C /* totalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = totalViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C143DA420DBB06A0081348C /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +51,7 @@
 			children = (
 				4C143D8920DBAB770081348C /* Text123 */,
 				4C143D8820DBAB770081348C /* Products */,
+				4C143DA220DBB06A0081348C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,11 +69,23 @@
 				4C143D8A20DBAB770081348C /* AppDelegate.swift */,
 				4C143D8C20DBAB770081348C /* ViewController.swift */,
 				4C143D8E20DBAB770081348C /* Main.storyboard */,
+				4C143DA520DBB3E10081348C /* detailViewController.swift */,
+				4C143DA020DBAFFC0081348C /* TableViewController.swift */,
+				4C143D9E20DBAF690081348C /* TableViewCell.swift */,
 				4C143D9120DBAB770081348C /* Assets.xcassets */,
 				4C143D9320DBAB770081348C /* LaunchScreen.storyboard */,
 				4C143D9620DBAB770081348C /* Info.plist */,
+				4C143DA720DBB53C0081348C /* totalViewController.swift */,
 			);
 			path = Text123;
+			sourceTree = "<group>";
+		};
+		4C143DA220DBB06A0081348C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C143DA320DBB06A0081348C /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +160,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C143D9F20DBAF690081348C /* TableViewCell.swift in Sources */,
+				4C143DA820DBB53C0081348C /* totalViewController.swift in Sources */,
 				4C143D8D20DBAB770081348C /* ViewController.swift in Sources */,
 				4C143D8B20DBAB770081348C /* AppDelegate.swift in Sources */,
+				4C143DA620DBB3E10081348C /* detailViewController.swift in Sources */,
+				4C143DA120DBAFFC0081348C /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
